@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={sabiq} className="App-logo" alt="logo" />
         <p>
-          Hai JakPintas Beta
+          Hai JakPintas di netlify
         </p>
       </header>
     </div>
