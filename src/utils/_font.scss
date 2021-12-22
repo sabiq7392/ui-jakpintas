@@ -1,0 +1,14 @@
+@import './font-face';
+
+$font-commons-black: 'tt-commons-black';
+$font-commons-x-bold: 'tt-commons-extra-bold';
+$font-commons-bold: 'tt-commons-bold';
+$font-commons-demi-bold: 'tt-commons-demi-bold';
+$font-commons-medium: 'tt-commons-medium';
+$font-commons-light: 'tt-commons-light';
+$font-commons-thin: 'tt-commons-thin';
+
+.font-commons-bold { font-family: $font-commons-bold!important; }
+.font-commons-demi-bold { font-family: $font-commons-demi-bold!important; }
+.font-commons-medium { font-family: $font-commons-medium; }
+.font-montserrat { font-family: $font-montserrat!important; }

@@ -1,0 +1,49 @@
+$rounded-sm:  5px;
+$rounded-md: 10px;
+$rounded-lg: 15px;
+$rounded-xl: 20px;
+
+.my-rounded-sm { border-radius: $rounded-sm; }
+.my-rounded-md { border-radius: $rounded-md; }
+.my-rounded-lg { border-radius: $rounded-lg; }
+.my-rounded-xl { border-radius: $rounded-xl; }
+
+.my-rounded-sm-bottom {
+  border-bottom-left-radius: $rounded-sm;
+  border-bottom-right-radius: $rounded-sm;
+}
+
+.my-rounded-md-bottom {
+  border-bottom-left-radius: $rounded-md;
+  border-bottom-right-radius: $rounded-md;
+}
+
+.my-rounded-lg-bottom {
+  border-bottom-left-radius: $rounded-lg;
+  border-bottom-right-radius: $rounded-lg;
+}
+
+.my-rounded-xl-bottom {
+  border-bottom-left-radius: $rounded-xl;
+  border-bottom-right-radius: $rounded-xl;
+}
+
+.my-rounded-sm-top {
+  border-top-left-radius: $rounded-sm;
+  border-top-right-radius: $rounded-sm;
+}
+
+.my-rounded-md-top {
+  border-top-left-radius: $rounded-md;
+  border-top-right-radius: $rounded-md;
+}
+
+.my-rounded-lg-top {
+  border-top-left-radius: $rounded-lg;
+  border-top-right-radius: $rounded-lg;
+}
+
+.my-rounded-xl-top {
+  border-top-left-radius: $rounded-xl;
+  border-top-right-radius: $rounded-xl;
+}

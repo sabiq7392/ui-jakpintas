@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+// import { ZoomControl, CompassControl } from 'mapbox-gl-controls';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FiaXFtYW1lIiwiYSI6ImNrb3djeDFxdTA0NXAybmx4a25sNTg0OWoifQ.yu_-5Imtn9jA0bkF6PbvLA';
@@ -17,9 +18,13 @@ export default function MapBox() {
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [lng, lat],
-      zoom: zoom
+      zoom,
     });
+
+    // map.current.addControl(new CompassControl(), 'bottom-right');
+    // map.current.addControl(new ZoomControl(), 'bottom-right');
   });
+
   
   useEffect(() => {
     if (!map.current) return; // wait for map to initialize

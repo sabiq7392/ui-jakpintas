@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './utils/variables';
+@import './utils/colors';
+@import './utils/backgrounds';
+@import './utils/font';
+@import './utils/rounded';
 @import './components/Header/header';
+@import './components/Main/main';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+}
 
 .map-container {
   height: 100vh;
@@ -7,14 +24,6 @@
 
 .sidebar {
   display: none;
-  // background-color: rgba(35, 55, 75, 0.9);
-  // color: #fff;
-  // padding: 6px 12px;
-  // font-family: monospace;
-  // z-index: 1;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // margin: 12px;
-  // border-radius: 4px;
 }
+
+
