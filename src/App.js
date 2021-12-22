@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={sabiq} className="App-logo" alt="logo" />
         <p>
-          Hai JakPintas
+          Hai JakPintas Beta
         </p>
       </header>
     </div>
