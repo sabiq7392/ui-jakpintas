@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7d02147.css",
-    "main.js": "/static/js/main.087f4f31.js",
+    "main.css": "/static/css/main.a6c8c827.css",
+    "main.js": "/static/js/main.3a509106.js",
     "static/js/787.5de0b824.chunk.js": "/static/js/787.5de0b824.chunk.js",
+    "static/media/TT-Commons-Black.otf": "/static/media/TT-Commons-Black.bf24a4dd45a349ff9cb2.otf",
+    "static/media/TT-Commons-ExtraBold.otf": "/static/media/TT-Commons-ExtraBold.f13d3de3b576fa414e34.otf",
+    "static/media/TT-Commons-Bold.otf": "/static/media/TT-Commons-Bold.3d86f1a76afba3f39aee.otf",
+    "static/media/TT-Commons-DemiBold.otf": "/static/media/TT-Commons-DemiBold.d35b2502dc5c5dcfc1ac.otf",
+    "static/media/TT-Commons-Medium.otf": "/static/media/TT-Commons-Medium.fec750d69d7de2bf5efa.otf",
+    "static/media/TT-Commons-Light.otf": "/static/media/TT-Commons-Light.e2029bfb697090e44385.otf",
+    "static/media/TT-Commons-Thin.otf": "/static/media/TT-Commons-Thin.671a2645b3883e19479c.otf",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
     "index.html": "/index.html",
-    "main.b7d02147.css.map": "/static/css/main.b7d02147.css.map",
-    "main.087f4f31.js.map": "/static/js/main.087f4f31.js.map",
+    "main.a6c8c827.css.map": "/static/css/main.a6c8c827.css.map",
+    "main.3a509106.js.map": "/static/js/main.3a509106.js.map",
     "787.5de0b824.chunk.js.map": "/static/js/787.5de0b824.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7d02147.css",
-    "static/js/main.087f4f31.js"
+    "static/css/main.a6c8c827.css",
+    "static/js/main.3a509106.js"
   ]
 }
