@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/google-maps-clone/static/css/main.073c9b0a.css",
-    "main.js": "/google-maps-clone/static/js/main.65aa6689.js",
-    "static/js/787.5de0b824.chunk.js": "/google-maps-clone/static/js/787.5de0b824.chunk.js",
-    "static/media/sabiq.jpg": "/google-maps-clone/static/media/sabiq.c285732f5b45beaaf464.jpg",
-    "index.html": "/google-maps-clone/index.html",
-    "main.073c9b0a.css.map": "/google-maps-clone/static/css/main.073c9b0a.css.map",
-    "main.65aa6689.js.map": "/google-maps-clone/static/js/main.65aa6689.js.map",
-    "787.5de0b824.chunk.js.map": "/google-maps-clone/static/js/787.5de0b824.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.1e027586.js",
+    "static/js/787.5de0b824.chunk.js": "/static/js/787.5de0b824.chunk.js",
+    "static/media/sabiq.jpg": "/static/media/sabiq.c285732f5b45beaaf464.jpg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.1e027586.js.map": "/static/js/main.1e027586.js.map",
+    "787.5de0b824.chunk.js.map": "/static/js/787.5de0b824.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.65aa6689.js"
+    "static/js/main.1e027586.js"
   ]
 }
