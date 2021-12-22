@@ -1,19 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import Maps from './components/maps';
+import React from 'react';
+import Main from './components/Main/Main';
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
-      <main>
-        <Maps />
-      </main>
-      <footer>
-        
-      </footer>
+      <header></header>
+      <Main />
+      <footer></footer>
     </div>
   );
 }
