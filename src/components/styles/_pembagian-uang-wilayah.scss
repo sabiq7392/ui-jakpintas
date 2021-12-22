@@ -1,0 +1,47 @@
+.pembagian-uang-wilayah {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  padding: 20px;
+  .box {
+    background-color: $color-light;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: $shadow-default;
+    p {
+      margin-bottom: 0.3rem;
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .d-flex > .box-color {
+      border-radius: 2px;
+      background-color: $color-orange-light;
+      height: 12px;
+      width: 12px;
+    }
+
+    .d-flex {
+      &:nth-child(1) > .box-color {
+        filter: brightness(140%);
+      }
+      &:nth-child(2) > .box-color {
+        filter: brightness(125%);
+      }
+      &:nth-child(3) > .box-color {
+        filter: brightness(110%);
+      }
+      &:nth-child(4) > .box-color {
+        filter: brightness(95%);
+      }
+      &:nth-child(5) > .box-color {
+        filter: brightness(80%);
+      }
+      &:nth-child(6) > .box-color {
+        filter: brightness(65%);
+      }
+    }
+  }
+}

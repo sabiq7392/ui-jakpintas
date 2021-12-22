@@ -4,6 +4,8 @@
 @import './utils/backgrounds';
 @import './utils/font';
 @import './utils/rounded';
+@import './utils/shadows';
+
 @import './components/Header/header';
 @import './components/Main/main';
 
@@ -11,6 +13,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: 1px solid #eee;
 }
 
 input {

@@ -202,40 +202,22 @@
   border-top-right-radius: 20px;
 }
 
-header {
-  z-index: 100;
-  top: 20px;
-  left: 20px;
+.drop-shadow-default {
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+}
+
+.drop-shadow-sm {
   -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
 }
 
-header .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  padding: 30px;
-  height: 160px;
+.shadow-default {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-header .title img {
-  width: 70px;
-  height: 80px;
-}
-
-header .title h1 {
-  font-size: 32px;
-}
-
-header .title blockquote {
-  background-color: #0956C6;
-  color: white;
-  border-radius: 30px;
-  padding: 2px 10px;
-}
-
-header .search-input {
+.search-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,18 +225,18 @@ header .search-input {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 90%;
+  width: 85%;
   padding: 8px;
   background-color: white;
-  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.65));
-          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.65));
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
 }
 
-header .search-input button[aria-label="open menu"] {
+.search-input button[aria-label="open menu"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,25 +245,48 @@ header .search-input button[aria-label="open menu"] {
           align-items: center;
   height: 30px;
   width: 30px;
+  background-color: white;
+  border-radius: 50%;
 }
 
-header .search-input button[aria-label="open menu"] .bi-list {
+.search-input button[aria-label="open menu"] .bi-list {
   color: black;
   font-size: 20px;
 }
 
-header .search-input button[aria-label="open menu"]:focus {
+.search-input button[aria-label="open menu"]:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 2px solid #F7941D;
 }
 
-header .search-input input[type="search"] {
+.search-input button[aria-label="open menu"]:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.search-input input[type="search"] {
   width: 100%;
   outline: none;
 }
 
-header .search-input button[aria-label="cari kelurahan"] {
+.search-input input[type="search"]::-webkit-input-placeholder {
+  letter-spacing: 0.5px;
+}
+
+.search-input input[type="search"]:-ms-input-placeholder {
+  letter-spacing: 0.5px;
+}
+
+.search-input input[type="search"]::-ms-input-placeholder {
+  letter-spacing: 0.5px;
+}
+
+.search-input input[type="search"]::placeholder {
+  letter-spacing: 0.5px;
+}
+
+.search-input button[aria-label="cari kelurahan"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,23 +299,169 @@ header .search-input button[aria-label="cari kelurahan"] {
   background: #f7941d;
   background: linear-gradient(48deg, #f7941d 84%, white 100%);
   color: white;
-  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.65));
-          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.65));
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
   height: 30px;
   width: 30px;
 }
 
-header .search-input button[aria-label="cari kelurahan"] i.bi-search {
-  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.65));
-          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.65));
+.search-input button[aria-label="cari kelurahan"]:hover {
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2)) brightness(90%);
+          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2)) brightness(90%);
 }
 
-.container-button {
+header {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  left: 0;
   z-index: 100;
+  max-width: 520px;
+  padding: 20px;
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
+}
+
+header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  height: 170px;
+}
+
+header .title img {
+  width: 70px;
+  height: 80px;
+}
+
+header .title h1 {
+  font-size: 30px;
+}
+
+header .title blockquote {
+  background-color: #0956C6;
+  color: white;
+  border-radius: 30px;
+  padding: 2px 10px;
+  font-size: 14px;
+}
+
+.container-button-right {
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.container-button-right a, .container-button-right button {
+  height: 44px;
+  width: 44px;
+  color: black;
+  border-radius: 50%;
   background-color: #F4F4F4;
+}
+
+.container-button-right a i, .container-button-right button i {
+  font-size: 18px;
+}
+
+.container-button-right a:hover, .container-button-right button:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.container-button-right a {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pembagian-uang-wilayah {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px;
+}
+
+.pembagian-uang-wilayah .box {
+  background-color: #F4F4F4;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pembagian-uang-wilayah .box p {
+  margin-bottom: 0.3rem;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.pembagian-uang-wilayah .box .d-flex > .box-color {
+  border-radius: 2px;
+  background-color: #F7941D;
+  height: 12px;
+  width: 12px;
+}
+
+.pembagian-uang-wilayah .box .d-flex:nth-child(1) > .box-color {
+  -webkit-filter: brightness(140%);
+          filter: brightness(140%);
+}
+
+.pembagian-uang-wilayah .box .d-flex:nth-child(2) > .box-color {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.pembagian-uang-wilayah .box .d-flex:nth-child(3) > .box-color {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.pembagian-uang-wilayah .box .d-flex:nth-child(4) > .box-color {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+.pembagian-uang-wilayah .box .d-flex:nth-child(5) > .box-color {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.pembagian-uang-wilayah .box .d-flex:nth-child(6) > .box-color {
+  -webkit-filter: brightness(65%);
+          filter: brightness(65%);
+}
+
+.info-lihat-rencana-kota {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 95%;
+  margin: auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #117A96;
+  color: white;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.info-lihat-rencana-kota p {
+  font-size: 12px;
 }
 
 * {
@@ -318,6 +469,10 @@ header .search-input button[aria-label="cari kelurahan"] i.bi-search {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+*:focus {
+  outline: 1px solid #eee;
 }
 
 input {

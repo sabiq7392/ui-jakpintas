@@ -1,0 +1,30 @@
+.container-button-right {
+  height: 100vh;
+  padding: 20px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  a, button {
+    height: 44px;
+    width: 44px;
+
+    color: black;
+    border-radius: 50%;
+    background-color: $color-light;
+    i {
+      font-size: 18px;
+    }
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  a {
+    display: grid;
+    place-items: center;
+    box-shadow: $shadow-default;
+  }
+}
