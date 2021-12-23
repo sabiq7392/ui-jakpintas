@@ -1,10 +1,11 @@
 export default function Menu() {
   const setActive = ({ id }) => {
     const menuButtons = document.querySelectorAll('.menu-button');
-
+    const menuPopUp = document.querySelector('#menuPopUp');
     menuButtons.forEach((menuButton) => {
       if (menuButton.id === id) {
         menuButton.classList.add('active');
+        menuPopUp.classList.add('d-none');
       } else {
         menuButton.classList.remove('active');
       }
@@ -31,15 +32,21 @@ export default function Menu() {
     }
 
     if (menuButtonId.id === 'kirimMasukkan') {
-
+      const menuPopUpKirimMasukkan = document.querySelector('#menuPopUpKirimMasukkan');
+      if (menuPopUpKirimMasukkan.classList.contains('active')) {
+        menuPopUpKirimMasukkan.classList.remove('active');
+      } else {
+        menuPopUpKirimMasukkan.classList.add('active');
+      }
     } 
 
     if (menuButtonId.id === 'cetak') {
-
-    }
-
-    if (menuButtonId.id === 'bantuan') {
-      
+      const menuPopUpCetak = document.querySelector('#menuPopUpCetak');
+      if (menuPopUpCetak.classList.contains('active')) {
+        menuPopUpCetak.classList.remove('active');
+      } else {
+        menuPopUpCetak.classList.add('active');
+      }
     }
   }
 

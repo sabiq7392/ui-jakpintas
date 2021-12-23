@@ -1,0 +1,79 @@
+.menu-pop-up-cetak {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%);
+  z-index: 200;
+  &.active {
+    display: flex;
+  }
+  .preview {
+    display: grid;
+    gap: 10px;
+
+    background-color: $color-turqoise-light;
+    color: white;
+    box-shadow: $shadow-default;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  img.image-cetak {
+    width: 450px;
+    height: 200px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .cetak-data {
+    display: flex;
+    p {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    p:nth-child(1) {
+      flex: 1;
+    }
+    p:nth-child(2) {
+      flex: 2;
+    }
+  }
+  .form-cetak {
+    background-color: $color-light;
+    padding: 20px;
+    border-radius: 10px;
+    form {
+      display: grid;
+      gap: 10px;
+    }
+    .container-input {
+      display: flex;
+      gap: 10px;
+      label {
+        flex: 2;
+        display: flex;
+        align-items: center;
+      }
+      input {
+        flex: 1;
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 30px;
+      }
+    }
+    .container-btn {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .btn-more-setting {
+      background-color: #eeee;
+      border-radius: 30px;
+    }
+  }
+}
