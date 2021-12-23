@@ -1,5 +1,5 @@
 import JakPintasLogo from '../../images/logo_jakpintas.png';
-import Search from './_Search';
+import SearchInputMenu from './_Search-Input-Menu';
 
 export default function Header() {
   return (
@@ -18,9 +18,9 @@ export default function Header() {
             </blockquote>
           </div>
         </div>
-        <Search />
+        <SearchInputMenu />
       </div>
-      <div className='info-lihat-rencana-kota'>
+      <div id='infoLihatRencanaKota' className='info-lihat-rencana-kota'>
         <i className="bi bi-caret-down-fill"></i>
         <p className='m-0'>Lihat Rencana Kotam Interpolasi NJOP, Penggunaan Lahan Eksisting. Usaha Mikro Kecil</p>
       </div>

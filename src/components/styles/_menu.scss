@@ -1,0 +1,26 @@
+.menu {
+  display: none;
+
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  z-index: 90;
+
+  padding: 10px;
+  width: 75%;
+  transform: translateX(-50%);
+
+  background-color: $color-turqoise-light;  
+  border-radius: 10px;
+  a {
+    padding: 8px 25px;
+    color: white;
+    text-decoration: none;
+    background-color: inherit;
+    border-radius: 30px;
+
+    &:hover, &.active {
+      filter: brightness(110%);
+    }
+  }
+}

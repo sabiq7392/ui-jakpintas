@@ -217,7 +217,7 @@
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.search-input {
+.search-input-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,87 +227,121 @@
   position: absolute;
   top: -30px;
   left: 50%;
+  z-index: 100;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 85%;
-  padding: 8px;
+  padding: 8px 20px;
+  max-height: 46px;
   background-color: white;
+  -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
   -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
 }
 
-.search-input button[aria-label="open menu"] {
+.search-input-menu .skeleton-button {
+  display: -ms-grid;
+  display: grid;
+  height: 30px;
+  width: 30px;
+}
+
+.search-input-menu button[aria-label="open menu"],
+.search-input-menu button[aria-label="cari kelurahan"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 30px;
   width: 30px;
   background-color: white;
   border-radius: 50%;
 }
 
-.search-input button[aria-label="open menu"] .bi-list {
+.search-input-menu button[aria-label="open menu"] .bi-list,
+.search-input-menu button[aria-label="cari kelurahan"] .bi-list {
   color: black;
   font-size: 20px;
 }
 
-.search-input button[aria-label="open menu"]:focus {
+.search-input-menu button[aria-label="open menu"]:focus,
+.search-input-menu button[aria-label="cari kelurahan"]:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 2px solid #F7941D;
 }
 
-.search-input button[aria-label="open menu"]:hover {
+.search-input-menu button[aria-label="open menu"]:hover,
+.search-input-menu button[aria-label="cari kelurahan"]:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
 
-.search-input input[type="search"] {
+.search-input-menu input[type="search"] {
   width: 100%;
   outline: none;
+  font-weight: 500;
 }
 
-.search-input input[type="search"]::-webkit-input-placeholder {
+.search-input-menu input[type="search"]::-webkit-input-placeholder {
   letter-spacing: 0.5px;
 }
 
-.search-input input[type="search"]:-ms-input-placeholder {
+.search-input-menu input[type="search"]:-ms-input-placeholder {
   letter-spacing: 0.5px;
 }
 
-.search-input input[type="search"]::-ms-input-placeholder {
+.search-input-menu input[type="search"]::-ms-input-placeholder {
   letter-spacing: 0.5px;
 }
 
-.search-input input[type="search"]::placeholder {
+.search-input-menu input[type="search"]::placeholder {
   letter-spacing: 0.5px;
 }
 
-.search-input button[aria-label="cari kelurahan"] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.search-input-menu button[aria-label="cari kelurahan"] {
   background: #f7941d;
   background: linear-gradient(48deg, #f7941d 84%, white 100%);
   color: white;
   -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
-  height: 30px;
-  width: 30px;
 }
 
-.search-input button[aria-label="cari kelurahan"]:hover {
+.search-input-menu button[aria-label="cari kelurahan"]:hover {
   -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2)) brightness(90%);
           filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2)) brightness(90%);
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  z-index: 90;
+  padding: 10px;
+  width: 75%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #117A96;
+  border-radius: 10px;
+}
+
+.menu a {
+  padding: 8px 25px;
+  color: white;
+  text-decoration: none;
+  background-color: inherit;
+  border-radius: 30px;
+}
+
+.menu a:hover, .menu a.active {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 header {
@@ -315,8 +349,10 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  max-width: 520px;
+  max-width: 540px;
   padding: 20px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
   -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
 }
@@ -331,8 +367,8 @@ header .title {
 }
 
 header .title img {
-  width: 70px;
-  height: 80px;
+  width: 90px;
+  height: 70px;
 }
 
 header .title h1 {
@@ -464,15 +500,18 @@ header .title blockquote {
   font-size: 12px;
 }
 
+.jenis-peta {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-*:focus {
-  outline: 1px solid #eee;
 }
 
 input {

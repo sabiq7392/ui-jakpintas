@@ -1,20 +1,32 @@
-.search-input {
+.search-input-menu {
   display: flex;
   align-items: center;
 
   position: absolute;
   top: -30px;
   left: 50%;
+  z-index: 100;
+  
   transform: translateX(-50%);
 
   width: 85%;
-  padding: 8px;
+  padding: 8px 20px;
+
+  max-height: 46px;
 
   background-color: white;
+  box-shadow: $shadow-bottom-default;
   filter: $drop-shadow-default;
-  button[aria-label="open menu"] {
+  .skeleton-button {
+    display: grid;
+    height: 30px;
+    width: 30px;
+  }
+  button[aria-label="open menu"], 
+  button[aria-label="cari kelurahan"]  {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     height: 30px;
     width: 30px;
@@ -25,10 +37,11 @@
       color: black;
       font-size: 20px;
     }
+
     &:focus {
       box-shadow: none;
-      border: 2px solid $color-orange-light;
     }
+    
     &:hover {
       filter: brightness(90%);
     }
@@ -37,24 +50,18 @@
   input[type="search"] {
     width: 100%;
     outline: none;
+    font-weight: 500;
     &::placeholder {
       letter-spacing: 0.5px;
     }
   }
 
   button[aria-label="cari kelurahan"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     background: rgb(247,148,29);
     background: linear-gradient(48deg, rgba(247,148,29,1) 84%, rgba(255,255,255,1) 100%);
 
     color: white;
     filter: $drop-shadow-default;
-
-    height: 30px;
-    width: 30px;
     &:hover {
       filter: $drop-shadow-default brightness(90%);
     }

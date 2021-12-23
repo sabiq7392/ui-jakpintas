@@ -55,6 +55,9 @@ export default function Main() {
           </div>
         </div>
       </div>
+      {/* <div className="jenis-peta">
+        <h2>Jenis Peta</h2>
+      </div> */}
     </main>
   );
 }
