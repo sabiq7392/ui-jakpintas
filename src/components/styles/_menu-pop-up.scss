@@ -1,0 +1,11 @@
+@import './jenis-peta';
+@import './button-action';
+
+.menu-pop-up {
+  display: none;
+  gap: 50px;
+
+  position: fixed;
+  top: 20px;
+  right: 85px;
+}

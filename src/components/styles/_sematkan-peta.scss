@@ -1,0 +1,45 @@
+.menu-pop-up-sematkan-peta {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 200;
+
+  box-shadow: $shadow-default;
+
+  background-color: $color-turqoise-light;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  &.active {
+    display: grid;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p, h2, address {
+    padding: 0 20px;
+  }
+
+  a { 
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+  }
+
+  a, button {
+    padding: 10px 20px;
+    background-color: $color-turqoise-light;  
+    filter: brightness(110%);
+    color: white;
+    border-radius: 30px;
+  }
+}

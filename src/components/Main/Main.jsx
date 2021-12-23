@@ -1,4 +1,7 @@
 import MapBox from './_MapBox';
+import MenuPopUp from './_Menu-Pop-Up';
+import Bagikan from './_Bagikan';
+import SematkanPeta from './_Sematkan-Peta';
 
 export default function Main() {
   return (
@@ -6,27 +9,34 @@ export default function Main() {
       <MapBox />
       <div className='container-button-right'>
         <div className='d-flex flex-column justify-content-between h-100'>
-          <div className='d-grid gap-2'>
-            <a href='/' className='btn' aria-label='my profile'>
-              <i className='bi bi-person-circle' />
-            </a>
-            <a href='/' className='btn' aria-label=''>
-              <i className='bi bi-bookmarks' />
-            </a>
+          <div className='d-flex gap-3'>
+            <div className='d-flex flex-column gap-2'>
+              <a href='/' className='btn btn-menu' aria-label='my profile'>
+                <i className='bi bi-person-circle' />
+              </a>
+              <a href='/' className='btn btn-menu' aria-label=''>
+                <i className='bi bi-bookmarks' />
+              </a>
+            </div>
           </div>
-          <div className='d-grid gap-1 mb-5 my-bg-light shadow-default rounded-pill'>
-            <button className='btn' aria-label='zoom in'>
+          <div className='d-flex flex-column gap-1 mb-5 my-bg-light shadow-default rounded-pill'>
+            <button className='btn btn-menu' aria-label='zoom in'>
               <i className='bi bi-plus-lg' />
             </button>
-            <button className='btn' aria-label='zoom out'>
+            <button className='btn btn-menu' aria-label='zoom out'>
               <i className='bi bi-dash-lg' />
             </button>
-            <button className='btn' aria-label='compas'>
+            <button className='btn btn-menu' aria-label='compas'>
               <i className='bi bi-compass' />
             </button>
           </div>
         </div>
       </div>
+
+      <MenuPopUp />
+      <Bagikan />
+      <SematkanPeta />
+
       <div className='pembagian-uang-wilayah'>
         <div className='box mb-5'>
           <div className='d-flex gap-1'>
@@ -55,9 +65,6 @@ export default function Main() {
           </div>
         </div>
       </div>
-      {/* <div className="jenis-peta">
-        <h2>Jenis Peta</h2>
-      </div> */}
     </main>
   );
 }

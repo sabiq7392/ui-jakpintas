@@ -319,8 +319,9 @@
 
 .menu {
   display: none;
+  gap: 5px;
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 50%;
   z-index: 90;
   padding: 10px;
@@ -331,7 +332,7 @@
   border-radius: 10px;
 }
 
-.menu a {
+.menu button {
   padding: 8px 25px;
   color: white;
   text-decoration: none;
@@ -339,7 +340,13 @@
   border-radius: 30px;
 }
 
-.menu a:hover, .menu a.active {
+.menu button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu button:hover, .menu button.active {
+  color: rgba(255, 255, 255, 0.5);
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
@@ -392,7 +399,7 @@ header .title blockquote {
   z-index: 100;
 }
 
-.container-button-right a, .container-button-right button {
+.container-button-right a.btn-menu, .container-button-right button.btn-menu {
   height: 44px;
   width: 44px;
   color: black;
@@ -400,11 +407,11 @@ header .title blockquote {
   background-color: #F4F4F4;
 }
 
-.container-button-right a i, .container-button-right button i {
+.container-button-right a.btn-menu i, .container-button-right button.btn-menu i {
   font-size: 18px;
 }
 
-.container-button-right a:hover, .container-button-right button:hover {
+.container-button-right a.btn-menu:hover, .container-button-right button.btn-menu:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
@@ -501,10 +508,180 @@ header .title blockquote {
 }
 
 .jenis-peta {
-  position: fixed;
-  top: 0;
-  right: 0;
   z-index: 100;
+  padding: 15px;
+  background-color: #117A96;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.jenis-peta h2 {
+  color: white;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.jenis-peta .box-jenis-peta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 160px;
+  padding: 2px 15px;
+  border-radius: 30px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.jenis-peta .box-jenis-peta:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.container-btn-action {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.25rem;
+  z-index: 100;
+  padding: 15px;
+  background-color: #117A96;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container-btn-action .btn-action {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 160px;
+  padding: 2px 15px;
+  border-radius: 30px;
+  color: #414042;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.container-btn-action .btn-action:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.menu-pop-up {
+  display: none;
+  gap: 50px;
+  position: fixed;
+  top: 20px;
+  right: 85px;
+}
+
+.menu-pop-up-bagikan {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 200;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #117A96;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-pop-up-bagikan.active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.menu-pop-up-bagikan h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-pop-up-bagikan p, .menu-pop-up-bagikan h2 {
+  padding: 0 20px;
+}
+
+.menu-pop-up-bagikan a {
+  font-size: 12px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.menu-pop-up-bagikan a, .menu-pop-up-bagikan button {
+  padding: 10px 20px;
+  background-color: #117A96;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  color: white;
+  border-radius: 30px;
+}
+
+.menu-pop-up-sematkan-peta {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 200;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #117A96;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-pop-up-sematkan-peta.active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.menu-pop-up-sematkan-peta iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.menu-pop-up-sematkan-peta h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-pop-up-sematkan-peta p, .menu-pop-up-sematkan-peta h2, .menu-pop-up-sematkan-peta address {
+  padding: 0 20px;
+}
+
+.menu-pop-up-sematkan-peta a {
+  font-size: 12px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.menu-pop-up-sematkan-peta a, .menu-pop-up-sematkan-peta button {
+  padding: 10px 20px;
+  background-color: #117A96;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  color: white;
+  border-radius: 30px;
 }
 
 * {

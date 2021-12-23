@@ -1,29 +1,27 @@
-.jenis-peta {
+.container-btn-action {
+  display: grid;
+  gap: 0.25rem;
   z-index: 100;
   padding: 15px;
 
   background-color: $color-turqoise-light;
   border-radius: 10px;
   box-shadow: $shadow-default;
-  h2 {
-    color: white;
-    font-size: 18px;
-    padding-left: 15px;
-  }
-
-  .box-jenis-peta {
-    display: flex;
+  .btn-action {
+    display: flex!important;
     align-items: center;
     gap: 10px;
     width: 160px;
     padding: 2px 15px;
 
     border-radius: 30px;
+    color: $color-black;
     background-color: $color-white;
     box-shadow: $shadow-bottom-default;
-    cursor: pointer;
+    text-decoration: none;
     &:hover {
       filter: brightness(90%);
     }
   }
 }
+

@@ -1,8 +1,9 @@
 .menu {
   display: none;
+  gap: 5px;
 
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 50%;
   z-index: 90;
 
@@ -12,14 +13,19 @@
 
   background-color: $color-turqoise-light;  
   border-radius: 10px;
-  a {
+  button {
     padding: 8px 25px;
     color: white;
     text-decoration: none;
     background-color: inherit;
     border-radius: 30px;
 
+    &:focus {
+      box-shadow: none;
+    }
+
     &:hover, &.active {
+      color: rgba($color: $color-white, $alpha: 0.5);
       filter: brightness(110%);
     }
   }
