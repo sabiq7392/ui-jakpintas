@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.539b78b7.css",
-    "main.js": "/static/js/main.90e7e781.js",
+    "main.css": "/static/css/main.62ca7c34.css",
+    "main.js": "/static/js/main.32a07e30.js",
     "static/js/787.5de0b824.chunk.js": "/static/js/787.5de0b824.chunk.js",
     "static/media/ganti-lokasi.png": "/static/media/ganti-lokasi.2e16cbc26496e460d072.png",
     "static/media/TT-Commons-Black.otf": "/static/media/TT-Commons-Black.bf24a4dd45a349ff9cb2.otf",
@@ -13,13 +13,14 @@
     "static/media/TT-Commons-Thin.otf": "/static/media/TT-Commons-Thin.671a2645b3883e19479c.otf",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
+    "static/media/diagram-1.png": "/static/media/diagram-1.64192ecdd5e2e59c1f9f.png",
     "index.html": "/index.html",
-    "main.539b78b7.css.map": "/static/css/main.539b78b7.css.map",
-    "main.90e7e781.js.map": "/static/js/main.90e7e781.js.map",
+    "main.62ca7c34.css.map": "/static/css/main.62ca7c34.css.map",
+    "main.32a07e30.js.map": "/static/js/main.32a07e30.js.map",
     "787.5de0b824.chunk.js.map": "/static/js/787.5de0b824.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.539b78b7.css",
-    "static/js/main.90e7e781.js"
+    "static/css/main.62ca7c34.css",
+    "static/js/main.32a07e30.js"
   ]
 }
