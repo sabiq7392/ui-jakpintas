@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1cd54d6.css",
-    "main.js": "/static/js/main.c9b9aa87.js",
+    "main.css": "/static/css/main.5abf6dc2.css",
+    "main.js": "/static/js/main.62be186b.js",
     "static/js/787.5de0b824.chunk.js": "/static/js/787.5de0b824.chunk.js",
     "static/media/TT-Commons-Black.otf": "/static/media/TT-Commons-Black.bf24a4dd45a349ff9cb2.otf",
     "static/media/TT-Commons-ExtraBold.otf": "/static/media/TT-Commons-ExtraBold.f13d3de3b576fa414e34.otf",
@@ -13,12 +13,12 @@
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
     "index.html": "/index.html",
-    "main.c1cd54d6.css.map": "/static/css/main.c1cd54d6.css.map",
-    "main.c9b9aa87.js.map": "/static/js/main.c9b9aa87.js.map",
+    "main.5abf6dc2.css.map": "/static/css/main.5abf6dc2.css.map",
+    "main.62be186b.js.map": "/static/js/main.62be186b.js.map",
     "787.5de0b824.chunk.js.map": "/static/js/787.5de0b824.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1cd54d6.css",
-    "static/js/main.c9b9aa87.js"
+    "static/css/main.5abf6dc2.css",
+    "static/js/main.62be186b.js"
   ]
 }
