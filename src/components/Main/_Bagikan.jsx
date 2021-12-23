@@ -1,6 +1,6 @@
 export default function Bagikan() {
   return (
-    <div id="menuPopUpBagikan" className="menu-pop-up-bagikan">
+    <div id="menuPopUpBagikan" className="menu-pop-up-bagikan menu-pop-up">
       <h2>Bagikan</h2>
       <p>Link untuk berbagi</p>
       <div className="d-flex gap-2">

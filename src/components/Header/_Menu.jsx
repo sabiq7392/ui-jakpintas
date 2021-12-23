@@ -1,53 +1,95 @@
 export default function Menu() {
   const setActive = ({ id }) => {
-    const menuButtons = document.querySelectorAll('.menu-button');
-    const menuPopUp = document.querySelector('#menuPopUp');
-    menuButtons.forEach((menuButton) => {
+    const menuButtons = document.getElementsByClassName('menu-button');
+    const menuPopUp = document.querySelector('#menuPopUpAction');
+    const filtered = (menuButton) => {
       if (menuButton.id === id) {
         menuButton.classList.add('active');
         menuPopUp.classList.add('d-none');
       } else {
         menuButton.classList.remove('active');
       }
-    });
+    };
+
+    [...menuButtons].filter((menuButton) => filtered(menuButton));
 
     const menuButtonId = document.getElementById(id);
+    const menuPopUpBagikan = document.querySelector('#menuPopUpBagikan');
+    const menuPopUpSematkanPeta = document.querySelector('#menuPopUpSematkanPeta');
+    const menuPopUpKirimMasukkan = document.querySelector('#menuPopUpKirimMasukkan');
+    const menuPopUpCetak = document.querySelector('#menuPopUpCetak');
+    const menuPopUpInfoLokasi = document.querySelector('#menuPopUpInfoLokasi');
 
-    if (menuButtonId.id === 'bagikan') {
-      const menuPopUpBagikan = document.querySelector('#menuPopUpBagikan');
-      if (menuPopUpBagikan.classList.contains('active')) {
+    const bagikan = () => {
+      if (menuButtonId.id === 'bagikan') {
+        if (menuPopUpBagikan.classList.contains('active')) {
+          menuPopUpBagikan.classList.remove('active');
+        } else {
+          menuPopUpBagikan.classList.add('active');
+        }
+      } else {
         menuPopUpBagikan.classList.remove('active');
-      } else {
-        menuPopUpBagikan.classList.add('active');
       }
-    }
+    };
 
-    if (menuButtonId.id === 'sematkanPeta') {
-      const menuPopUpSematkanPeta = document.querySelector('#menuPopUpSematkanPeta');
-      if (menuPopUpSematkanPeta.classList.contains('active')) {
+    bagikan();
+
+
+    const sematkanPeta = () => {
+      if (menuButtonId.id === 'sematkanPeta') {
+        if (menuPopUpSematkanPeta.classList.contains('active')) {
+          menuPopUpSematkanPeta.classList.remove('active');
+        } else {
+          menuPopUpSematkanPeta.classList.add('active');
+        }
+      } else {
         menuPopUpSematkanPeta.classList.remove('active');
-      } else {
-        menuPopUpSematkanPeta.classList.add('active');
       }
-    }
+    };
 
-    if (menuButtonId.id === 'kirimMasukkan') {
-      const menuPopUpKirimMasukkan = document.querySelector('#menuPopUpKirimMasukkan');
-      if (menuPopUpKirimMasukkan.classList.contains('active')) {
+    sematkanPeta();
+
+    const kirimMasukkan = () => {
+      if (menuButtonId.id === 'kirimMasukkan') {
+        if (menuPopUpKirimMasukkan.classList.contains('active')) {
+          menuPopUpKirimMasukkan.classList.remove('active');
+        } else {
+          menuPopUpKirimMasukkan.classList.add('active');
+        }
+      } else {
         menuPopUpKirimMasukkan.classList.remove('active');
-      } else {
-        menuPopUpKirimMasukkan.classList.add('active');
       }
-    } 
+    };
 
-    if (menuButtonId.id === 'cetak') {
-      const menuPopUpCetak = document.querySelector('#menuPopUpCetak');
-      if (menuPopUpCetak.classList.contains('active')) {
-        menuPopUpCetak.classList.remove('active');
+    kirimMasukkan();
+
+    const cetak = () => {
+      if (menuButtonId.id === 'cetak') {
+        if (menuPopUpCetak.classList.contains('active')) {
+          menuPopUpCetak.classList.remove('active');
+        } else {
+          menuPopUpCetak.classList.add('active');
+        }
       } else {
-        menuPopUpCetak.classList.add('active');
+        menuPopUpCetak.classList.remove('active');
       }
-    }
+    };
+
+    cetak();
+
+    const bantuan = () => {
+      if (menuButtonId.id === 'bantuan') {
+        if (menuPopUpInfoLokasi.classList.contains('active')) {
+          menuPopUpInfoLokasi.classList.remove('active');
+        } else {
+          menuPopUpInfoLokasi.classList.add('active');
+        }
+      } else {
+        menuPopUpInfoLokasi.classList.remove('active');
+      }
+    };
+
+    bantuan();
   }
 
   return (

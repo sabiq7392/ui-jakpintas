@@ -1,6 +1,6 @@
-export default function MenuPopUp() {
+export default function MenuAction() {
   return (
-    <div id="menuPopUp" className="menu-pop-up">
+    <div id="menuPopUpAction" className="menu-pop-up-action">
       <div className="jenis-peta">
         <h2 tabIndex={0}>Jenis Peta</h2>
         <div className='d-grid gap-1'>

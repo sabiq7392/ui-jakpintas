@@ -3,7 +3,7 @@ import gantiLokasi from '../../images/ganti-lokasi.png';
 
 export default function Cetak() {
   return (
-    <div id='menuPopUpCetak' className='menu-pop-up-cetak'>
+    <div id='menuPopUpCetak' className='menu-pop-up-cetak menu-pop-up'>
       <div className='preview'>
         <img 
           src={gantiLokasi} 

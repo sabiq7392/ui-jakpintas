@@ -217,6 +217,24 @@
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+.is-flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.is-flex-2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.is-flex-3 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
 .search-input-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,7 +597,7 @@ header .title blockquote {
           filter: brightness(90%);
 }
 
-.menu-pop-up {
+#menuPopUpAction {
   display: none;
   gap: 50px;
   position: fixed;
@@ -591,7 +609,7 @@ header .title blockquote {
   display: none;
   position: fixed;
   top: 30%;
-  left: 60%;
+  left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 200;
@@ -688,7 +706,7 @@ header .title blockquote {
   display: none;
   position: fixed;
   top: 10%;
-  left: 60%;
+  left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 200;
@@ -906,6 +924,155 @@ header .title blockquote {
 .menu-pop-up-cetak .form-cetak .btn-more-setting {
   background-color: #eeee;
   border-radius: 30px;
+}
+
+.menu-pop-up-info-lokasi {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 200;
+  max-height: 580px;
+  overflow-y: auto;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #117A96;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-pop-up-info-lokasi.active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.menu-pop-up-info-lokasi h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-pop-up-info-lokasi .container-info-lokasi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  padding: 2px 20px;
+}
+
+.menu-pop-up-info-lokasi .container-info-lokasi p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #414042;
+  font-weight: 600;
+}
+
+.menu-pop-up-info-lokasi .container-info-lokasi p:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu-pop-up-info-lokasi .container-info-lokasi p:nth-child(2) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata {
+  display: -ms-grid;
+  display: grid;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil h3, .menu-pop-up-info-lokasi .usaha-mikro-kecil p,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata h3,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata p {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil h3,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata h3 {
+  background-color: #58595b;
+  font-size: 16px;
+  padding: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil p,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata p {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil p.total,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata p.total {
+  background-color: #939598;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil p.pelaku,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata p.pelaku {
+  background-color: #e6e7e8;
+  color: #414042;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil img.diagram-satu,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata img.diagram-satu {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil .table-wrapper,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata .table-wrapper {
+  background-color: white;
+  padding: 10px;
+  color: #414042;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.menu-pop-up-info-lokasi .usaha-mikro-kecil .table-wrapper table td,
+.menu-pop-up-info-lokasi .pendapatan-rata-rata .table-wrapper table td {
+  font-size: 12px;
+}
+
+.menu-pop-up-info-lokasi .zona-perumahan {
+  background-color: #F4F4F4;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu-pop-up-info-lokasi .zona-perumahan h3, .menu-pop-up-info-lokasi .zona-perumahan a {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.menu-pop-up-info-lokasi .zona-perumahan h3 {
+  font-size: 16px;
+  color: #414042;
+  padding: 8px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.menu-pop-up-info-lokasi .zona-perumahan a {
+  border: 1px solid #eee;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: #414042;
+  padding: 5px;
+  background-color: white;
 }
 
 * {

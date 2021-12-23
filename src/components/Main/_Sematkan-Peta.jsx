@@ -1,6 +1,6 @@
 export default function SematkanPeta() {
   return (
-    <div id="menuPopUpSematkanPeta" className="menu-pop-up-sematkan-peta">
+    <div id="menuPopUpSematkanPeta" className="menu-pop-up-sematkan-peta menu-pop-up">
       <h2>Sematkan Peta</h2>
       <address>
         <span>Daerah </span>

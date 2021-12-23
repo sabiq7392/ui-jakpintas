@@ -2,7 +2,7 @@ import gantiLokasi from '../../images/ganti-lokasi.png';
 
 export default function KirimMasukkan() {
   return (
-    <div id="menuPopUpKirimMasukkan" className="menu-pop-up-kirim-masukkan">
+    <div id="menuPopUpKirimMasukkan" className="menu-pop-up-kirim-masukkan menu-pop-up">
       <h2>Kirim Masukkan</h2>
       <form action="">
         <div className='d-grid gap-3'>

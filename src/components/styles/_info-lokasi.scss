@@ -1,0 +1,124 @@
+.menu-pop-up-info-lokasi {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 200;
+  max-height: 580px;
+  overflow-y: auto;
+
+  box-shadow: $shadow-default;
+
+  background-color: $color-turqoise-light;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  &.active {
+    display: grid;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .container-info-lokasi {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    padding: 2px 20px;
+    p {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: $color-black;
+      font-weight: 600;
+    }
+
+    p:nth-child(1) {
+      flex: 1;
+    }
+
+    p:nth-child(2) {
+      flex: 2;
+    }
+  }
+
+  .usaha-mikro-kecil,
+  .pendapatan-rata-rata {
+    display: grid;
+    h3, p {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    h3 {
+      background-color: #58595b;
+      font-size: 16px;
+      padding: 8px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px;
+    }
+
+    p.total {
+      background-color: #939598;
+    }
+    p.pelaku {
+      background-color: #e6e7e8;
+      color: $color-black;
+    }
+    img.diagram-satu {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .table-wrapper {
+      background-color: white;
+      padding: 10px;
+      color: $color-black;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      table {
+        td {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .zona-perumahan {
+    background-color: $color-light;
+    padding: 10px;
+    border-radius: 10px;
+    h3, a {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: $color-black;
+      padding: 8px;
+      font-weight: bold;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    a {
+      border: 1px solid #eee;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 14px;
+      text-decoration: none;
+      color: $color-black;
+      padding: 5px;
+      background-color: white;
+
+    }
+  }
+
+}

@@ -1,9 +1,10 @@
 import MapBox from './_MapBox';
-import MenuPopUp from './_Menu-Pop-Up';
+import MenuAction from './_MenuAction';
 import Bagikan from './_Bagikan';
 import SematkanPeta from './_Sematkan-Peta';
 import KirimMasukkan from './_Kirim-Masukkan';
 import Cetak from './_Cetak';
+import InfoLokasi from './_Info-Lokasi';
 
 export default function Main() {
   return (
@@ -35,11 +36,12 @@ export default function Main() {
         </div>
       </div>
 
-      <MenuPopUp />
+      <MenuAction />
       <Bagikan />
       <SematkanPeta />
       <KirimMasukkan />
       <Cetak />
+      <InfoLokasi />
 
       <div className='pembagian-uang-wilayah'>
         <div className='box mb-5'>
