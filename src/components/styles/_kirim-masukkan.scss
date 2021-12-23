@@ -5,7 +5,8 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 200;
-
+  max-height: 580px;
+  overflow-y: auto;
   box-shadow: $shadow-default;
 
   background-color: $color-turqoise-light;

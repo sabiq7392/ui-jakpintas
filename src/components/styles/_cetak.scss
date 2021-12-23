@@ -5,6 +5,9 @@
   left: 60%;
   transform: translate(-50%);
   z-index: 200;
+
+  max-height: 580px;
+  overflow-y: auto;
   &.active {
     display: flex;
   }

@@ -710,6 +710,8 @@ header .title blockquote {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 200;
+  max-height: 580px;
+  overflow-y: auto;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   background-color: #117A96;
@@ -814,6 +816,8 @@ header .title blockquote {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 200;
+  max-height: 580px;
+  overflow-y: auto;
 }
 
 .menu-pop-up-cetak.active {
