@@ -655,7 +655,7 @@ header .title blockquote {
   display: none;
   position: fixed;
   top: 25%;
-  left: 60%;
+  left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 200;
